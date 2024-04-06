@@ -4,6 +4,7 @@
 --light-gray: hsl(212, 45%, 89%);
 --grayish-blue: hsl(220, 15%, 55%);
 --dark-blue: hsl(218, 44%, 22%);
+--heading-font:22px;
 }
 /* Typography */
 .outfit-light,.outfit-bold{
@@ -13,10 +14,10 @@
   }
   .outfit-light {
     font-weight: 400;
-   
   }
   .outfit-bold {
     font-weight: 700;
+    font-size:var(--heading-font);
   }
   /* basic styles */
   *{
@@ -29,11 +30,41 @@
     font-size: 15px;
     background-color: var(--light-gray);
   }
+  img{
+    max-width: 100%;
+    height:auto;
+  }
   .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 30px;
   }
 
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+/* component style */
+  .qr-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    
+}
+.component-card {
+    background: var(--white);
+    width: 320px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.component-image img {
+    border-radius: 10px;
+}
+.component-text p {
+    color: var(--grayish-blue);
+    padding: 0px 15px;
+
+}
