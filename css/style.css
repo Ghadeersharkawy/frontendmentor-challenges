@@ -1,0 +1,31 @@
+/* colors variables */
+:root{
+    --white: hsl(0, 0%, 100%);
+--light-gray: hsl(212, 45%, 89%);
+--grayish-blue: hsl(220, 15%, 55%);
+--dark-blue: hsl(218, 44%, 22%);
+}
+/* Typography */
+.outfit-light,.outfit-bold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .outfit-light {
+    font-weight: 400;
+   
+  }
+  .outfit-bold {
+    font-weight: 700;
+  }
+  /* basic styles */
+  *{
+    box-sizing: border-box;
+  }
+  html,body{
+    height:100%;
+  }
+  body{
+    font-size: 15px;
+    background-color: var(--light-gray);
+  }
